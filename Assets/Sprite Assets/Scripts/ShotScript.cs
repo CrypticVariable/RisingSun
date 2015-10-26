@@ -1,11 +1,11 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class ShotScript : MonoBehaviour {
-	// Set these in the editor!
-    public int damage;
-	public float bulletspeed;
-	public bool isEnemyShot;
+public class ShotScript : MonoBehaviour
+{
+    public int damage = 1;
+	public float bulletspeed = 3;
+	public bool isEnemyShot = false;
 
 	private Vector3 dir;
 

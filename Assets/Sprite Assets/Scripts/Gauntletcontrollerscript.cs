@@ -3,10 +3,9 @@ using System.Collections;
 
 public class Gauntletcontrollerscript : MonoBehaviour
 {
-	// Set these in the editor!
-	public float maxspeed;
-	public float speed;
-	public float jumpForce;
+	public float maxspeed = 1.5f;
+	public float speed = 1.5f;
+	public float jumpForce = 150f;
 	public Transform groundCheck;
 	public Transform GauntletBullet;
 	public LayerMask whatIsGround;
