@@ -15,7 +15,7 @@ public class BulletScript : MonoBehaviour {
     void Update () {
         transform.Translate(Vector3.right * bulletspeed * Time.deltaTime);
 	}
-    void OnBecameInvisible (){
+    void OnBecameInvisible () {
         this.gameObject.SetActive(false);
     }
 }
