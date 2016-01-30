@@ -71,8 +71,14 @@ public class Gauntletcontrollerscript : MonoBehaviour
 			Transform bullet = Instantiate(GauntletBullet, rb2d.position, Quaternion.identity) as Transform;
 			if(bullet != null)
 			{
+				Vector3 dir = facingRight ? Vector3.right : Vector3.left;
+				bullet.transform.Translate(dir * 0.1f); // 0.1 determined by trial-and-error...
+
 				ShotScript shot = bullet.GetComponent<ShotScript>();
 				if(shot != null) shot.SetDirection(facingRight ? "right" : "left");
+
+				AudioSource pewpew = GetComponent<AudioSource>();
+				if(pewpew != null) pewpew.Play(); // PEW PEW
 			}
 			Invoke("resetCooldown", 0.75f);
 		}
