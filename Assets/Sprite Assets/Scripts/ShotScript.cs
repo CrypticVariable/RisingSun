@@ -9,7 +9,6 @@ public class ShotScript : MonoBehaviour
 
 	private Vector3 dir;
 
-	// Use this for initialization
 	void Start ()
 	{
 		if(dir == null) SetDirection("right");
@@ -19,7 +18,7 @@ public class ShotScript : MonoBehaviour
 	public void SetDirection(string face)
 	{
 		dir = (face == "right") ? Vector3.right : Vector3.left;
-		transform.localScale = new Vector3(face == "right" ? 2 : -2, 2, 1);
+		transform.localScale = new Vector3((face == "right" ? 2 : -2), 2, 1);
 	}
 
 	void Update () {
@@ -27,7 +26,9 @@ public class ShotScript : MonoBehaviour
 	}
 
 	void OnTriggerEnter2D(Collider2D collider) {
-		if(collider.gameObject.tag != "Player") {
+		if((collider.gameObject.tag != "Player") != isEnemyShot) {
+			collider.gameObject.SendMessage("TakeDamage", null, SendMessageOptions.DontRequireReceiver);
+
 			this.gameObject.SetActive(false);
 			Destroy(gameObject);
 		}

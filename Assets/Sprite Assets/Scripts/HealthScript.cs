@@ -3,27 +3,16 @@ using System.Collections;
 
 public class HealthScript : MonoBehaviour {
 
-    public int hp = 2;
+    public int hp = 2; // default value
 
     public bool isEnemy = true;
 
-    void OnTriggerEnter2D (Collider2D collider){
+	public void Awake() {
+		
+	}
 
-        ShotScript shot = collider.gameObject.GetComponent<ShotScript>();
-
-        if (shot != null)
-        {
-            if (shot.isEnemyShot != isEnemy)
-            {
-                hp -= shot.damage;
-
-                Destroy(shot.gameObject);
-
-                if (hp <= 0)
-                {
-                    Destroy(gameObject);
-                }
-            }
-        }
-    }
+	public void TakeDamage () {
+		hp--;
+		if(hp < 1) Destroy(gameObject);
+	}
 }

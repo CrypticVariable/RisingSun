@@ -16,6 +16,7 @@ public class Gauntletcontrollerscript : MonoBehaviour
     private Rigidbody2D rb2d;
     private bool facingRight;
 	private bool canFire = true;
+	private float knockbackTimer = 0f;
 
     void Start ()
     {
@@ -25,6 +26,8 @@ public class Gauntletcontrollerscript : MonoBehaviour
 
     void Update()
     {
+		if(knockbackTimer > 0) return;
+
         if (grounded && Input.GetKeyDown(KeyCode.Space))
 		{
             anim.SetBool("grounded", false);
@@ -40,10 +43,15 @@ public class Gauntletcontrollerscript : MonoBehaviour
         grounded = Physics2D.OverlapCircle(groundCheck.position, groundRadius, whatIsGround);
 		anim.SetBool("grounded", grounded);
 
+		if(knockbackTimer > 0) {
+			Physics2D.IgnoreLayerCollision(8, 10, false);
+			knockbackTimer -= Time.deltaTime;
+			return;
+		}
+
 		float h = Input.GetAxis("Horizontal");
 		float newSpeed = maxspeed * h;
-		
-		anim.SetFloat("speed", rb2d.velocity.y);
+
 		anim.SetFloat("speed", Mathf.Abs(h));
 		
 		//Changing player direction
@@ -73,9 +81,7 @@ public class Gauntletcontrollerscript : MonoBehaviour
 			{
 				Vector3 dir = facingRight ? Vector3.right : Vector3.left;
 				bullet.transform.Translate(dir * 0.1f); // 0.1 determined by trial-and-error...
-
-				ShotScript shot = bullet.GetComponent<ShotScript>();
-				if(shot != null) shot.SetDirection(facingRight ? "right" : "left");
+				bullet.SendMessage("SetDirection", facingRight ? "right" : "left");
 
 				AudioSource pewpew = GetComponent<AudioSource>();
 				if(pewpew != null) pewpew.Play(); // PEW PEW
