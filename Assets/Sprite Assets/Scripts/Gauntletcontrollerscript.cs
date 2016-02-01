@@ -62,7 +62,30 @@ public class Gauntletcontrollerscript : MonoBehaviour
 		{
 			rb2d.velocity = new Vector2(newSpeed, rb2d.velocity.y);
 		}
-    }
+	}
+
+	void OnDestroy () {
+		Time.timeScale = 0;
+	}
+
+	public int maxhp() {
+		HealthScript hs = GetComponent<HealthScript> ();
+
+		if(hs != null) {
+			return hs.maxhp;
+		}
+
+		return 1;
+	}
+
+	public int hp () {
+		HealthScript hs = GetComponent<HealthScript> ();
+		if(hs != null) {
+			return hs.GetHp ();
+		}
+
+		return 0;
+	}
 
     private void flip ()
     {
@@ -90,8 +113,7 @@ public class Gauntletcontrollerscript : MonoBehaviour
 		}
 	}
 
-	private void resetCooldown()
-	{
+	private void resetCooldown () {
 		canFire = true;
 	}
 }

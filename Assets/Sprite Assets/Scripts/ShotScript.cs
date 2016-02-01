@@ -29,7 +29,7 @@ public class ShotScript : MonoBehaviour
 		if((collider.gameObject.tag != "Player") != isEnemyShot) {
 			collider.gameObject.SendMessage("TakeDamage", null, SendMessageOptions.DontRequireReceiver);
 
-			this.gameObject.SetActive(false);
+//			this.gameObject.SetActive(false);
 			Destroy(gameObject);
 		}
 	}
