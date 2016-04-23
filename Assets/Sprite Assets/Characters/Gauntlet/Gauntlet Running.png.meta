@@ -47,7 +47,7 @@ TextureImporter:
   bumpmap:
     convertToNormalMap: 0
     externalNormalMap: 0
-    heightScale: .25
+    heightScale: 0.25
     normalMapFilter: 0
   isReadable: 0
   grayScaleToAlpha: 0
@@ -56,7 +56,7 @@ TextureImporter:
   cubemapConvolutionSteps: 8
   cubemapConvolutionExponent: 1.5
   seamlessCubemap: 0
-  textureFormat: -1
+  textureFormat: -3
   maxTextureSize: 1024
   textureSettings:
     filterMode: -1
@@ -72,7 +72,7 @@ TextureImporter:
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
-  spritePivot: {x: .5, y: .5}
+  spritePivot: {x: 0.5, y: 0.5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spritePixelsToUnits: 100
   alphaIsTransparency: 1
@@ -90,6 +90,15 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -3, y: 28}
+        - {x: -8, y: 24}
+        - {x: -14, y: 16}
+        - {x: -14, y: -31}
+        - {x: -13, y: -32}
+        - {x: 15, y: -32}
+        - {x: 15, y: 3}
+        - {x: 7, y: 28}
     - name: Gauntlet Running_1
       rect:
         serializedVersion: 2
@@ -100,6 +109,15 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -3, y: 28}
+        - {x: -10, y: 26}
+        - {x: -14, y: 19}
+        - {x: -14, y: -24}
+        - {x: -13, y: -32}
+        - {x: 15, y: -32}
+        - {x: 15, y: 3}
+        - {x: 7, y: 28}
     - name: Gauntlet Running_2
       rect:
         serializedVersion: 2
@@ -110,6 +128,14 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -9, y: 28}
+        - {x: -14, y: 22}
+        - {x: -14, y: -23}
+        - {x: -11, y: -32}
+        - {x: 15, y: -32}
+        - {x: 15, y: 9}
+        - {x: 7, y: 28}
     - name: Gauntlet Running_3
       rect:
         serializedVersion: 2
@@ -120,6 +146,15 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14, y: 12}
+        - {x: -16, y: -8}
+        - {x: -16, y: -32}
+        - {x: 18, y: -32}
+        - {x: 18, y: -6}
+        - {x: 6, y: 28}
+        - {x: -4, y: 28}
+        - {x: -8, y: 24}
     - name: Gauntlet Running_4
       rect:
         serializedVersion: 2
@@ -130,6 +165,16 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -19, y: -30}
+        - {x: -18, y: -32}
+        - {x: 15, y: -32}
+        - {x: 21, y: -30}
+        - {x: 21, y: -6}
+        - {x: 9, y: 28}
+        - {x: -8, y: 28}
+        - {x: -12, y: 27}
+        - {x: -19, y: -4}
     - name: Gauntlet Running_5
       rect:
         serializedVersion: 2
@@ -140,6 +185,14 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -5, y: 28}
+        - {x: -11, y: 20}
+        - {x: -25, y: -10}
+        - {x: -25, y: -27}
+        - {x: 24, y: -27}
+        - {x: 24, y: -13}
+        - {x: 8, y: 28}
     - name: Gauntlet Running_6
       rect:
         serializedVersion: 2
@@ -150,6 +203,17 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -13, y: 28}
+        - {x: -26, y: 0}
+        - {x: -26, y: -19}
+        - {x: -25, y: -21}
+        - {x: -15, y: -19}
+        - {x: 9, y: -24}
+        - {x: 22, y: -24}
+        - {x: 25, y: -20}
+        - {x: 25, y: -6}
+        - {x: 9, y: 28}
     - name: Gauntlet Running_7
       rect:
         serializedVersion: 2
@@ -160,6 +224,15 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -5, y: 28}
+        - {x: -18, y: 14}
+        - {x: -26, y: -2}
+        - {x: -26, y: -19}
+        - {x: -7, y: -24}
+        - {x: 25, y: -24}
+        - {x: 25, y: -7}
+        - {x: 7, y: 28}
     - name: Gauntlet Running_8
       rect:
         serializedVersion: 2
@@ -170,6 +243,17 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -13, y: 28}
+        - {x: -26, y: 0}
+        - {x: -26, y: -19}
+        - {x: -25, y: -21}
+        - {x: -15, y: -19}
+        - {x: 9, y: -24}
+        - {x: 22, y: -24}
+        - {x: 25, y: -20}
+        - {x: 25, y: -6}
+        - {x: 9, y: 28}
     - name: Gauntlet Running_9
       rect:
         serializedVersion: 2
@@ -180,6 +264,14 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -9, y: 28}
+        - {x: -25, y: 4}
+        - {x: -25, y: -27}
+        - {x: 23, y: -27}
+        - {x: 24, y: -24}
+        - {x: 24, y: -14}
+        - {x: 6, y: 28}
     - name: Gauntlet Running_10
       rect:
         serializedVersion: 2
@@ -190,6 +282,18 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 20, y: -14}
+        - {x: 10, y: 21}
+        - {x: 5, y: 28}
+        - {x: -4, y: 28}
+        - {x: -8, y: 24}
+        - {x: -8, y: 21}
+        - {x: -13, y: 12}
+        - {x: -22, y: -17}
+        - {x: -22, y: -24}
+        - {x: -17, y: -29}
+        - {x: 20, y: -29}
     - name: Gauntlet Running_11
       rect:
         serializedVersion: 2
@@ -200,6 +304,13 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14, y: 28}
+        - {x: -21, y: -1}
+        - {x: -21, y: -31}
+        - {x: 18, y: -31}
+        - {x: 18, y: -16}
+        - {x: 8, y: 28}
     - name: Gauntlet Running_12
       rect:
         serializedVersion: 2
@@ -210,6 +321,15 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14, y: 12}
+        - {x: -16, y: -8}
+        - {x: -16, y: -32}
+        - {x: 18, y: -32}
+        - {x: 18, y: -6}
+        - {x: 6, y: 28}
+        - {x: -4, y: 28}
+        - {x: -8, y: 24}
     - name: Gauntlet Running_13
       rect:
         serializedVersion: 2
@@ -220,6 +340,14 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -9, y: 28}
+        - {x: -14, y: 22}
+        - {x: -14, y: -23}
+        - {x: -11, y: -32}
+        - {x: 15, y: -32}
+        - {x: 15, y: 9}
+        - {x: 7, y: 28}
     - name: Gauntlet Running_14
       rect:
         serializedVersion: 2
@@ -230,6 +358,15 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -3, y: 28}
+        - {x: -10, y: 26}
+        - {x: -14, y: 19}
+        - {x: -14, y: -24}
+        - {x: -13, y: -32}
+        - {x: 15, y: -32}
+        - {x: 15, y: 3}
+        - {x: 7, y: 28}
     - name: Gauntlet Running_15
       rect:
         serializedVersion: 2
@@ -240,6 +377,16 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -4, y: 28}
+        - {x: -11, y: 26}
+        - {x: -16, y: 0}
+        - {x: -16, y: -17}
+        - {x: -9, y: -32}
+        - {x: 10, y: -32}
+        - {x: 15, y: -17}
+        - {x: 15, y: -1}
+        - {x: 7, y: 28}
     - name: Gauntlet Running_16
       rect:
         serializedVersion: 2
@@ -250,6 +397,17 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 5, y: 28}
+        - {x: -9, y: 28}
+        - {x: -11, y: 27}
+        - {x: -16, y: 2}
+        - {x: -16, y: -18}
+        - {x: -8, y: -32}
+        - {x: 13, y: -32}
+        - {x: 15, y: -28}
+        - {x: 15, y: 17}
+        - {x: 14, y: 20}
     - name: Gauntlet Running_17
       rect:
         serializedVersion: 2
@@ -260,6 +418,17 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 16, y: -9}
+        - {x: 6, y: 28}
+        - {x: -8, y: 28}
+        - {x: -17, y: 11}
+        - {x: -17, y: -30}
+        - {x: -16, y: -32}
+        - {x: 7, y: -32}
+        - {x: 20, y: -29}
+        - {x: 20, y: -18}
+        - {x: 18, y: -15}
     - name: Gauntlet Running_18
       rect:
         serializedVersion: 2
@@ -270,6 +439,16 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -3, y: 28}
+        - {x: -9, y: 25}
+        - {x: -17, y: 3}
+        - {x: -17, y: -31}
+        - {x: -14, y: -32}
+        - {x: 16, y: -32}
+        - {x: 20, y: -30}
+        - {x: 20, y: -3}
+        - {x: 7, y: 28}
     - name: Gauntlet Running_19
       rect:
         serializedVersion: 2
@@ -280,6 +459,12 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -22, y: 28}
+        - {x: -22, y: -31}
+        - {x: 22, y: -31}
+        - {x: 22, y: 23}
+        - {x: 14, y: 28}
     - name: Gauntlet Running_20
       rect:
         serializedVersion: 2
@@ -290,6 +475,19 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17, y: -13}
+        - {x: -11, y: -10}
+        - {x: -21, y: -15}
+        - {x: -24, y: -19}
+        - {x: -24, y: -23}
+        - {x: -21, y: -29}
+        - {x: 25, y: -29}
+        - {x: 25, y: -6}
+        - {x: 14, y: 28}
+        - {x: -9, y: 28}
+        - {x: -11, y: 27}
+        - {x: -22, y: -9}
     - name: Gauntlet Running_21
       rect:
         serializedVersion: 2
@@ -300,6 +498,21 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -7, y: 28}
+        - {x: -12, y: 27}
+        - {x: -21, y: -9}
+        - {x: -16, y: -12}
+        - {x: -15, y: -12}
+        - {x: -15, y: -13}
+        - {x: -19, y: -11}
+        - {x: -23, y: -13}
+        - {x: -23, y: -27}
+        - {x: 23, y: -27}
+        - {x: 24, y: -26}
+        - {x: 25, y: -24}
+        - {x: 25, y: -10}
+        - {x: 8, y: 28}
     - name: Gauntlet Running_22
       rect:
         serializedVersion: 2
@@ -310,6 +523,16 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -3, y: 28}
+        - {x: -11, y: 26}
+        - {x: -23, y: -9}
+        - {x: -23, y: -21}
+        - {x: -22, y: -24}
+        - {x: 2, y: -27}
+        - {x: 25, y: -27}
+        - {x: 25, y: -10}
+        - {x: 8, y: 28}
     - name: Gauntlet Running_23
       rect:
         serializedVersion: 2
@@ -320,6 +543,21 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -7, y: 28}
+        - {x: -12, y: 27}
+        - {x: -21, y: -9}
+        - {x: -16, y: -12}
+        - {x: -15, y: -12}
+        - {x: -15, y: -13}
+        - {x: -19, y: -11}
+        - {x: -23, y: -13}
+        - {x: -23, y: -27}
+        - {x: 23, y: -27}
+        - {x: 24, y: -26}
+        - {x: 25, y: -24}
+        - {x: 25, y: -10}
+        - {x: 8, y: 28}
     - name: Gauntlet Running_24
       rect:
         serializedVersion: 2
@@ -330,6 +568,20 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 5, y: 28}
+        - {x: -5, y: 28}
+        - {x: -9, y: 25}
+        - {x: -20, y: -4}
+        - {x: -20, y: -8}
+        - {x: -17, y: -13}
+        - {x: -11, y: -10}
+        - {x: -21, y: -15}
+        - {x: -24, y: -16}
+        - {x: -24, y: -29}
+        - {x: 25, y: -29}
+        - {x: 25, y: -7}
+        - {x: 14, y: 20}
     - name: Gauntlet Running_25
       rect:
         serializedVersion: 2
@@ -340,6 +592,12 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -22, y: 28}
+        - {x: -22, y: -31}
+        - {x: 22, y: -31}
+        - {x: 22, y: 23}
+        - {x: 14, y: 28}
     - name: Gauntlet Running_26
       rect:
         serializedVersion: 2
@@ -350,6 +608,16 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -3, y: 28}
+        - {x: -9, y: 25}
+        - {x: -17, y: 3}
+        - {x: -17, y: -31}
+        - {x: -14, y: -32}
+        - {x: 16, y: -32}
+        - {x: 20, y: -30}
+        - {x: 20, y: -3}
+        - {x: 7, y: 28}
     - name: Gauntlet Running_27
       rect:
         serializedVersion: 2
@@ -360,6 +628,17 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 16, y: -9}
+        - {x: 6, y: 28}
+        - {x: -8, y: 28}
+        - {x: -17, y: 11}
+        - {x: -17, y: -30}
+        - {x: -16, y: -32}
+        - {x: 7, y: -32}
+        - {x: 20, y: -29}
+        - {x: 20, y: -18}
+        - {x: 18, y: -15}
     - name: Gauntlet Running_28
       rect:
         serializedVersion: 2
@@ -370,6 +649,17 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 5, y: 28}
+        - {x: -9, y: 28}
+        - {x: -11, y: 27}
+        - {x: -16, y: 2}
+        - {x: -16, y: -18}
+        - {x: -8, y: -32}
+        - {x: 13, y: -32}
+        - {x: 15, y: -28}
+        - {x: 15, y: 17}
+        - {x: 14, y: 20}
     - name: Gauntlet Running_29
       rect:
         serializedVersion: 2
@@ -380,6 +670,17 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -4, y: 28}
+        - {x: -11, y: 26}
+        - {x: -16, y: 0}
+        - {x: -16, y: -17}
+        - {x: -9, y: -32}
+        - {x: 10, y: -32}
+        - {x: 15, y: -17}
+        - {x: 15, y: -1}
+        - {x: 7, y: 28}
+    outline: []
   spritePackingTag: 
   userData: 
   assetBundleName: 
